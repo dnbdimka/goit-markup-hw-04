@@ -130,6 +130,11 @@ img {
 
   text-align: center;
   background-color: #2f303a;
+
+  background-image: url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .banner-section-title {
   margin-bottom: 30px;
