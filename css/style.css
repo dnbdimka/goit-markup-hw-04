@@ -63,7 +63,6 @@ img {
 .header-box {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
 }
 .logo-header,
 .logo-footer {
@@ -103,8 +102,8 @@ img {
 .main-nav .active,
 .main-nav-link:hover,
 .main-nav-link:focus,
-.header-contacts-item:hover,
-.header-contacts-item:focus {
+.header-contacts-link:hover,
+.header-contacts-link:focus {
   color: var(--brand-color);
 }
 /*------------------ header contacts ------------------*/
@@ -113,25 +112,55 @@ img {
   margin-left: auto;
 }
 .header-contacts-item {
-  display: inline-block;
+  /* display: inline-block; */
+}
 
+.header-contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-contacts-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
 }
-.header-contacts-item:not(:last-child) {
-  margin-right: 50px;
-}
+
+/* .header-contacts-item::before {
+  display: inline-block;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-right: 10px;
+} */
+/* .header-contacts-item.icon-mail::before {
+  width: 16px;
+  height: 12px;
+  background-image: url(../images/icon/mail.svg);
+} */
+/* .header-contacts-item.icon-phone::before {
+  width: 10px;
+  height: 16px;
+  background-image: url(../images/icon/phone.svg);
+} */
+
 /*------------------ banner section ------------------*/
 .banner-section {
   padding: 200px 0;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
 
   text-align: center;
   background-color: #2f303a;
-
-  background-image: url(../images/hero-bg.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-bg.jpg);
+  /* background-image: url(../images/hero-bg.jpg); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -175,6 +204,34 @@ img {
   flex-basis: calc((100% / 4) - 30px);
   margin-left: 30px;
 }
+.advantages-item::before {
+  margin-bottom: 30px;
+  display: block;
+  content: "";
+  height: 120px;
+
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+}
+
+.advantages-item.icon-antenna::before {
+  background-image: url(../images/icon/antenna.svg);
+}
+
+.advantages-item.icon-clock::before {
+  background-image: url(../images/icon/clock.svg);
+}
+
+.advantages-item.icon-diagram::before {
+  background-image: url(../images/icon/diagram.svg);
+}
+
+.advantages-item.icon-astronaut::before {
+  background-image: url(../images/icon/astronaut.svg);
+}
+
 .advantages-title {
   margin-bottom: 10px;
 
