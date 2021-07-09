@@ -392,22 +392,22 @@ img {
   color: var(--brand-color);
 }
 
-.footer .container{
+.footer .container {
   display: flex;
 }
 
-.footer-socials{
+.footer-socials {
   margin-left: 70px;
 }
 
-.footer-title{
+.footer-title {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.footer-social-list{
+.footer-social-list {
   display: flex;
   margin-top: 20px;
 }
